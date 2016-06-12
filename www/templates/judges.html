@@ -1,0 +1,16 @@
+
+<ion-view view-title="Our Judges">
+  <ion-content>
+      <ul class="list list-inset">
+        <li class="item item-divider">
+            <h2>Our Judges</h2>
+        </li>
+        <li class="item item-avatar item-text-wrap" ng-repeat="judge in judges">
+            <img ng-src="{{baseURL + judge.picture}}" alt="Peter Pan">
+            <h3>{{judge.name}}<h3>
+            <h4>{{judge.designation}}</h4>
+            <p>{{judge.description}}</p>
+        </li>
+    </ul>
+  </ion-content>
+</ion-view>
